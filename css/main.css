@@ -15,7 +15,7 @@ header {
 	overflow: hidden;
 	background-color: black;
 	height: 75px;
-	border-bottom: 5px solid red;
+	border-bottom: 5px yellow;
 }
 h1 {
 	color: yellow;
@@ -48,12 +48,24 @@ a {
   content: "";
   display: block;
 }
+#hero {
+	height: 400px;
+	background-size: cover;
+	background: transparent url("../images/coworking.jpg");
+	background-repeat: no-repeat;
+	clear: both;
+}
 #strike {
 	text-decoration: line-through;
 	color: darkgrey;
 }
-.yellowline {
+#yellowline {
 	text-decoration: underline;
-	text-decoration-color: yellow;
+	/*text-decoration-color: yellow;*/
+	text-underline-position: below; 
+}
+#coworkerPic {
+	width: 960px
+	height: 500px;
 }
 
