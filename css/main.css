@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 body {
@@ -9,13 +10,21 @@ body {
   font-size: 40px;
   color: black;
   line-height: 1.3;
+  width: 100%;
 }
-
-header {
+footer {
+	height: 75px;
+	background-color: black;
+	color: white;
+	line-height: 60px;
 	overflow: hidden;
+
+}
+header {
+
 	background-color: black;
 	height: 75px;
-	border-bottom: 5px yellow;
+	border-bottom: solid 5px yellow;
 }
 h1 {
 	color: yellow;
@@ -23,6 +32,7 @@ h1 {
 	font-family: bold;
 	padding-left: 50px;
 	padding-top: 10px;
+	width:400px;
 }
 h2 {
 	background-color: lightgrey;
@@ -34,38 +44,139 @@ h2 {
     font-family: bold;
     padding: 15px;
 }
-nav {
+h3 {
+	font-size: 25px;
+	font-weight: bold;
+	padding-left: 30px;
+	margin-right: 10px;	
+}
+h4 {
+	font-size: 25px;
+	font-weight: bold;
+	margin-left: 25px;
+	margin-top: 25px;
+
+}
+#main nav {
+	display: block;
 	float: right;
+	width: auto;
 	padding-right: 50px;
 }
-a {
+
+nav a {
 	font-size: 20px;
 	color: white;
 	text-decoration: none;
 }
-.clearfix:after {
- clear: both;
+p {
+	font-size: 17px;
+	padding-top:10px;
+	padding-left:30px;
+}
+.clearfix: {
+  clear: both;
   content: "";
   display: block;
 }
+#boxes {
+	overflow: hidden;
+	padding-top: 40px;
+}
+.box {
+  float: left;
+  width: 33%;
+  margin-right: 40px;
+  margin-bottom: 40px;
+ 
+  height: 217px;
+}
+
+.boxLast {
+	margin-right: 0px;
+}
+.boxLast p {
+	font-size: 20px;
+}
+.boxLast a {
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+.boxStart {
+	padding-top: 27px;
+}
+
+.box p {
+	font-size: 20px;
+
+}
+.box a {
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+
 #hero {
-	height: 400px;
-	background-size: cover;
-	background: transparent url("../images/coworking.jpg");
-	background-repeat: no-repeat;
-	clear: both;
+  overflow: hidden;
+  background-size: cover;
+  background: transparent url("../images/coworking.jpg") center center no-repeat;
+  background-repeat: no-repeat;
+  height: 350px;
+
+  width: 100%;
+}
+
+.divider {
+    position: absolute;
+    left: 34%;
+    top: 135%;
+    bottom: -93%;
+    border-left: 1px solid lightgrey;
+    overflow: hidden;
+ }
+.dividerRight {
+    position: absolute;
+    left: 69%;
+    top: 135%;
+    bottom: -93%;
+    border-left: 1px solid lightgrey;
+}
+#heromeet {
+	display: block;
+	float: right;
+	width: 400px;
+	margin-right: 150px;
+	margin-top: 40px;
+	opacity: .85;
+	background-color: white;	
+}
+#herocreate h3{
+	display: block;
+	padding: 5px 10px;
+	background-color: yellow;
+
+
+ 
+  border-radius: 10px;
+  
+  text-align: center;
+  margin: 10px 20px;
+  
+}
+}
+#heromeet a {
+	color:black;
+	font-weight: bold;
+	padding-left: 30px;
 }
 #strike {
 	text-decoration: line-through;
 	color: darkgrey;
 }
 #yellowline {
-	text-decoration: underline;
-	/*text-decoration-color: yellow;*/
-	text-underline-position: below; 
-}
-#coworkerPic {
-	width: 960px
-	height: 500px;
+	text-decoration: none;
+	border-bottom: 3px solid yellow;
 }
 
