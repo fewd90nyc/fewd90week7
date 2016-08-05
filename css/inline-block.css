@@ -49,9 +49,6 @@ h3 {
 	font-weight: bold;
 	padding-left: 30px;
 	margin-right: 10px;	
-	color: black;
-	text-decoration-line: none;
-
 }
 h4 {
 	font-size: 25px;
@@ -77,70 +74,102 @@ p {
 	padding-top:10px;
 	padding-left:30px;
 }
-.clearfix:after {
+.clearfix: {
   clear: both;
   content: "";
   display: block;
 }
-
+#boxes {
+	overflow: hidden;
+	padding-top: 40px;
+}
 .box {
-  width: 33.3333%;
-  box-sizing: border-box;
-  border-right: 1px solid #ccc;
-  padding-bottom: 40px;
   float: left;
-  box-sizing: border-box;
+  width: 33%;
+  margin-right: 40px;
+  margin-bottom: 40px;
+ 
+  height: 217px;
 }
-div:last-of-type {
-  border-right: none;
+
+.boxLast {
+	margin-right: 0px;
 }
-#boxStart a {
-	margin-top: 0px;
+.boxLast p {
+	font-size: 20px;
 }
+.boxLast a {
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+.boxStart {
+	padding-top: 27px;
+}
+
+.box p {
+	font-size: 20px;
+
+}
+.box a {
+	text-align: center;
+	text-decoration: none;
+	color: black;
+}
+
+
 #hero {
-  /*overflow: hidden;*/
-  background: url("../images/coworking.jpg") center center no-repeat;
+  overflow: hidden;
   background-size: cover;
-  /*height: 350px;*/
-  /*width: 100%;*/
+  background: url("../images/coworking.jpg") center center no-repeat;
+  background-repeat: no-repeat;
+  height: 350px;
+
+  width: 100%;
+}
+
+.divider {
+    position: absolute;
+    left: 34%;
+    top: 135%;
+    bottom: -93%;
+    border-left: 1px solid lightgrey;
+    overflow: hidden;
+ }
+.dividerRight {
+    position: absolute;
+    left: 69%;
+    top: 135%;
+    bottom: -93%;
+    border-left: 1px solid lightgrey;
 }
 #heromeet {
 	display: block;
 	float: right;
 	width: 400px;
-	margin:40px 40px 40px 0px;
-	
+	margin-right: 150px;
+	margin-top: 40px;
 	opacity: .85;
 	background-color: white;	
 }
-#herocreate a {
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  text-transform: uppercase;
-  text-decoration: none;
+#herocreate h3{
+	display: block;
+	padding: 5px 10px;
+	background-color: yellow;
+
+
+ 
+  border-radius: 10px;
+  
   text-align: center;
-  font-family: Impact;
-  color: black;
-  border-radius: 5px;
-  background-color: #cccccc;
-  box-shadow: 0 5px 0 0 gray;
-  margin-bottom: 20px;
-  padding-left: 20px;
-  margin-right: 20px;
-
-
+  margin: 10px 20px;
+  
 }
-
-a:hover {
-  box-shadow: none;
-  margin-top: 5px;
-  margin-bottom: 0px;
 }
-
 #heromeet a {
 	color:black;
 	font-weight: bold;
+	padding-left: 30px;
 }
 #strike {
 	text-decoration: line-through;
@@ -150,10 +179,4 @@ a:hover {
 	text-decoration: none;
 	border-bottom: 3px solid yellow;
 }
-/*************************************/
-@media only screen and (max-width:950px) {
-	body {
-		font-family: arial;
-}
-
 
