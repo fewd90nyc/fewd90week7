@@ -63,13 +63,13 @@ h4 {
 #menu {
 	display: none;
 }
+
 #main nav {
 	display: block;
 	float: right;
 	width: auto;
 	padding-right: 50px;
 }
-
 nav a {
 	font-size: 20px;
 	color: white;
@@ -208,6 +208,7 @@ a:hover {
  		font-size: .35em;
  	}
  	#heromeet {
+ 		
  		width: auto;
  	}
  }
