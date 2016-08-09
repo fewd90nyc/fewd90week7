@@ -1,1 +1,116 @@
 /* reset.css */ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font:inherit;vertical-align:baseline;box-shadow:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+
+
+h1 {
+	font-family: "Merriweather", serif;
+	color: yellow;
+	background-color: black;
+	border-bottom: 5px yellow solid;
+	padding: 35px;
+	font-size: 30px;
+}
+
+nav a {
+	background-color: black;
+	color: white;
+	margin: 0;	
+	text-decoration: none;	
+	clear: both;
+	text-align: right;
+}
+
+blockquote {
+	background-color: gray;
+	padding: 25px;
+	font-size: 30px;
+	font-weight: bold;
+	display: center;
+}
+
+#are {
+	border-bottom: 3px solid yellow;
+}
+
+#taste {
+	text-decoration: line-through;
+}
+body {
+	font-family: "Source Sans Pro";
+	background:url("../images/coworking.jpg") no-repeat;
+	background-size: cover;
+	background-position: center;
+
+}
+
+aside h3 {
+	font-family: "Merriweather", serif;
+	font-size: 25px;
+	width: 40%;
+	float: right;
+	margin-left: auto;
+	background-color: #C6C6C6;
+}
+
+aside p {
+	font-family: "Merriweather", serif;
+	font-size: 15px;
+	width: 40%;
+	float: right;
+	margin-left: auto;
+	background-color: #C6C6C6;
+	clear: both;
+}
+
+aside button {
+	font-family: "Oswald";
+	background-color: yellow;
+	font-size: 20px;
+	float: right;
+	clear: both;
+
+}
+
+section {
+	text-align: center;
+	box-sizing: border-box;
+	clear: both;
+  	width: 33.3333%;
+  	padding: 20px;
+  	display: inline-block;
+}
+
+button a {
+	font-family: "Oswald";
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center;
+	font-family: Impact;
+	color: black;
+	border-radius: 5px;
+	background-color: #cccccc;
+	box-shadow: 0 5px 0 0 gray;
+	margin-bottom: 5px;
+}
+
+a:hover {
+  	box-shadow: none;
+  	margin-top: 5px;
+  	margin-bottom: 0px;
+}
+
+
+footer {
+	background-color: black;
+	padding: 35px;
+	margin: 0;
+	color: white;
+}
+
+.clearfix:after {
+	content: "";
+  	clear: both;
+  	display: block;
+}
