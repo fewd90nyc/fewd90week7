@@ -1,0 +1,275 @@
+body{
+	font-family: "source Sans Pro";
+    overflow: scroll;
+}
+
+
+@media only screen and (min-width:650px) {
+	h1{
+	float: left;
+	color:yellow;
+	font-family: "Merriweather",serif;
+	font-size: 30px;
+}
+
+	nav{
+	float: right;
+	padding-top: 5px;
+    }
+
+   header{
+	background-color: black;
+	height: 60px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+    border-bottom: 5px solid yellow;
+     }
+
+    nav a{
+	font-size: 15px;
+	font-family: "Oswald", sans-serif;
+	color:white;
+	text-decoration: none;
+	margin-left: 0.3em;
+
+}
+     span{
+	font-family: "Merriweather", serif;
+    font-size: 25px;
+}
+
+section{
+	background-image:url("../images/coworking.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+}
+
+aside{
+	padding: 30px;
+	background-color: white;
+	opacity: 0.8;
+	width: 50%;
+    margin: 50px;
+    float:right;
+}
+
+h3{
+	font-family: "Merriweather",serif;
+	font-size: 25px;
+}
+
+button{
+	font-family: "Oswald";
+	
+}
+
+h4{
+	font-weight: bold;
+}
+
+footer{
+	clear: both;
+	background-color: black;
+	color: white;
+	padding: 20px;
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.column{
+	float: left;
+	width: 33%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.button{
+   background-color: #c6c6c6;
+   text-transform: uppercase;
+   width: 100%;
+}
+
+#profile{
+	width: 100%;
+	background-color: yellow;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color:#c6c6c6;
+	text-transform: uppercase;
+}
+
+#column{
+	padding-top: 50px;
+	height: 200px;
+}
+
+#special{
+	border-right: 2px solid #c6c6c6;
+	border-left: 2px solid #c6c6c6;
+}
+
+#banner {
+    background-color: #C6C6C6;
+	text-align: center;
+	height: 50px;
+	padding: 15px;
+}
+
+#grey{
+	color: grey;
+	text-decoration: line-through;
+}
+
+#underline{
+	text-decoration: underline;
+	text-decoration-color: yellow;
+}
+
+#links{
+	font-family: "Oswald", sans-serif;
+}
+}
+
+
+
+@media only screen and (max-width: 650px) {
+	h1{
+	float: left;
+	color:yellow;
+	font-family: "Merriweather",serif;
+	font-size: 30px;
+}
+
+	nav{
+    clear: both;
+	padding-top: 10px;
+    }
+
+   header{
+	background-color: black;
+	height: 100px;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+    border-bottom: 5px solid yellow;
+     }
+
+    nav a{
+	font-size: 15px;
+	font-family: "Oswald", sans-serif;
+	color:white;
+	text-decoration: none;
+	margin-left: 0.3em;
+
+}
+     span{
+	font-family: "Merriweather", serif;
+    font-size: 25px;
+}
+
+section{
+	background-image:url("../images/coworking.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 400px;
+}
+
+aside{
+	padding: 30px;
+	background-color: white;
+	opacity: 0.8;
+	width: 50%;
+    margin: 50px;
+    float:right;
+}
+
+h3{
+	font-family: "Merriweather",serif;
+	font-size: 25px;
+}
+
+button{
+	font-family: "Oswald";
+	
+}
+
+h4{
+	font-weight: bold;
+}
+
+footer{
+	clear: both;
+	background-color: black;
+	color: white;
+	padding: 20px;
+}
+
+p{
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.column{
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.button{
+   background-color: #c6c6c6;
+   text-transform: uppercase;
+   width: 100%;
+}
+
+#profile{
+	width: 100%;
+	background-color: yellow;
+	border-top:none;
+	border-left: none;
+	border-right: none;
+	border-bottom-color:#c6c6c6;
+	text-transform: uppercase;
+}
+
+#column{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	
+}
+
+#special{
+	border-right: 2px solid #c6c6c6;
+	border-left: 2px solid #c6c6c6;
+}
+
+#banner {
+    background-color: #C6C6C6;
+	text-align: center;
+	height: 80px;
+	padding: 15px;
+}
+
+#grey{
+	color: grey;
+	text-decoration: line-through;
+}
+
+#underline{
+	text-decoration: underline;
+	text-decoration-color: yellow;
+}
+
+#links{
+	font-family: "Oswald", sans-serif;
+}
+
+}
+
