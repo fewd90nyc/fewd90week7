@@ -47,8 +47,6 @@ h2 {
 h3 {
 	font-size: 25px;
 	font-weight: bold;
-	padding-left: 30px;
-	margin-right: 10px;	
 	color: black;
 	text-decoration-line: none;
 
@@ -56,7 +54,7 @@ h3 {
 h4 {
 	font-size: 25px;
 	font-weight: bold;
-	margin-left: 25px;
+	
 	margin-top: 25px;
 
 }
@@ -75,11 +73,12 @@ nav a {
 	color: white;
 	text-decoration: none;
 }
+
 p {
-	font-size: 17px;
-	padding-top:10px;
-	padding-left:30px;
+	font-size: 15px;
+	font-weight: 500;
 }
+
 .clearfix:after {
   clear: both;
   content: "";
@@ -89,48 +88,45 @@ p {
 .box {
   width: 33.3333%;
   box-sizing: border-box;
-  border-right: 1px solid #ccc;
-  padding-bottom: 40px;
+  border-right: 1px solid black;
+  padding-bottom: 12px;
   float: left;
- }
+  padding-left: 40px;
 
-div:last-of-type {
+ }
+ .box p {
+ 	font-size: 20px;
+ 	padding-top: 14px;
+}
+
+
+.signStart a h3 {
+	width: 33.3333%;
+	display: block;
+	float: left;
+	text-align: center;
+	border-right: 1px solid black;
+	
+}
+div:last-of-type {	
   border-right: none;
 }
-#boxStart a {
-	margin-top: 0px;
-}
+
 #hero {
-  /*overflow: hidden;*/
   background: url("../images/coworking.jpg") center center no-repeat;
   background-size: cover;
-  /*height: 350px;*/
-  /*width: 100%;*/
 }
 #heromeet {
 	display: block;
 	float: right;
 	width: 400px;
-	margin:40px 40px 40px 0px;
-	
+	padding-left: 40px;
+	padding-right: 40px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin: 40px 40px 40px;	
 	opacity: .85;
 	background-color: white;	
-}
-#herocreate a {
-  display: block;
-  height: 50px;
-  line-height: 50px;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  font-family: Impact;
-  color: black;
-  border-radius: 5px;
-  background-color: #cccccc;
-  box-shadow: 0 5px 0 0 gray;
-  margin-bottom: 20px;
-  padding-left: 20px;
-  margin-right: 20px;
 }
 
 a:hover {
@@ -138,10 +134,20 @@ a:hover {
   margin-top: 5px;
   margin-bottom: 0px;
 }
-
-#heromeet a {
+#heromeet p {
+	padding-top: 10px;
+}
+#heromeet a h3 {
 	color:black;
-	font-weight: bold;
+	font-size: 19px;
+	font-family: impact;
+	background-color: yellow;
+	text-align: center;
+	padding: 5px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	margin: 20px 5px;
+	box-shadow: 0 2px 0 0 gray;
 }
 #strike {
 	text-decoration: line-through;
@@ -151,6 +157,14 @@ a:hover {
 	text-decoration: none;
 	border-bottom: 3px solid yellow;
 }
+#partialBorder {
+	border-right: 1px solid black;
+}
+
+.spot {
+	padding: 5 20px;
+}
+
 /*************************************/
 @media only screen and (max-width:950px) {
 	body {
