@@ -2,32 +2,64 @@
 <html>
   <head>
     <title>Startup Matchmaker</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oswald:700|Merriweather:700,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    Startup Matchmaker
+      <header>
+        <h1><a href="index.html">Startup Matchmaker</a></h1>
+        <nav class="clearfix">
+            <a href="#" id="menu">&#09776;</a>
+          <div id="navigators">
+            <a href="#">Developers</a>
+            <a href="#">Designers</a>
+            <a href="#">How it Works</a>
+            <a href="#">Our Team</a>
+            <a href="#">Blog</a>
+          </div>
+        </nav>
+      </header>
+    
+    <p class="tagline">Because two brains <span id="taste">taste</span> <span id="are">are</span> better than one.</p>
 
-    Developers Designers How it Works Our Team Blog
-
-    Because two brains taste are better than one.
-
-    Meet your Match!
-    Have a great idea for a product, but need help making it a reality? We"re here to help. Startup Matchmaker is the best place for designers and developers to find each other.
-    Create a Profile
+    <section id="hero"></section>
+    
+    <div class="side">
+        <h2>Meet your Match!</h2>
+        <p>Have a great idea for a product, but need help making it a reality? We"re here to help. Startup Matchmaker is the best place for designers and developers to find each other.</p>
+        <a class="button">Create a Profile</a>
+    </div>
    
-    Create a Profile
-    Are you a Designer? Developer? Put yourself out there so that others can find you!
-    Sign Up Now
+    <section class="boxes">
+      <div class="box"> 
+        <h3>Create a Profile</h3>
+        <p>Are you a Designer? Developer? Put yourself out there so that others can find you!</p>
+        <a class="button">Sign Up Now</a>
+      </div>  
+        
+      <div class="box">  
+        <h3>Find a Developer</h3>
+        <p>Looking for a fantastic developer to work with on the next big thing? Look no further.</p>
+        <a class="button">Start Your Search</a>
+      </div>  
+     
+      <div class="box"> 
+        <h3>Find a Designer</h3>
+        <p>Need someone who can make a product intuitive and appealing? Get ready.</p>
+        <a class="button">Start Your Search</a>
+      </div>
+    </section>
+
     
-    Find a Developer
-    Looking for a fantastic developer to work with on the next big thing? Look no further.
-    Start Your Search
- 
-    Find a Designer
-    Need someone who can make a product intuitive and appealing? Get ready.
-    Start Your Search
-    
-    (C) 2013 Startup Matchmaker. Made in NY.
+    <footer>
+        <p>&copy; 2013 Startup Matchmaker. Made in NY.</p>
+    </footer>
+    <script>
+    document.getElementById("menu").onclick = function() {
+        document.querySelector("nav").classList.toggle("open");
+    };
+    </script>
   </body>
 </html>
