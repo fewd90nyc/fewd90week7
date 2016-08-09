@@ -13,6 +13,7 @@
 
     <nav>
     <a href="#" id="menu">&#9776;</a>
+    <a href="#" id="closemenu">&#10005;</a>
     <div id="anchors">
         <a href="#">Developers</a> 
         <a href="#">Designers</a>
@@ -61,7 +62,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
     <script>
       $("#menu").click(function(){
+        $("#menu").hide();
         $("#anchors").animate({left: 0}, 400);
+        $("#closemenu").show();
+        $("#closemenu").addClass("top");
+    });
+
+      $("#closemenu").click(function() {
+        $("#closemenu").removeClass("top");
+        $("#anchors").fadeOut();
+        $("#closemenu").hide();
+        $("#menu").show();
+        $("menu").addClass("top");
       });
     </script>
 </body>

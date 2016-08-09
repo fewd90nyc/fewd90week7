@@ -110,6 +110,15 @@ footer {
 	display: none;
 }
 
+#closemenu {
+	display: none;
+}
+
+.top {
+	position: relative;
+	z-index: 2;
+}
+
 .tagline {
 	font-family: "Merriweather", serif;
 	font-size: 1.25em;
