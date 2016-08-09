@@ -1,0 +1,225 @@
+*{
+margin: 0;
+font-family: Source Sans Pro;
+}
+html, body{
+width: 100%;
+height: 100%;
+font-family: "Source Sans Pro";
+
+}
+header{
+	width: 100%;
+	height: 7%;
+	background-color: black;
+	color: yellow;
+	border-bottom: 3px solid yellow;
+
+}
+h1{
+	float: left;
+	font-family: "Merriweather", serif;
+	font-size: 30px;
+	margin: .5%;
+	
+}
+nav a{
+	
+	padding: 5px;
+	color: white;
+	text-decoration: none;
+
+}
+nav{
+	float: right;
+	margin: 1%;
+}
+blockquote{
+	text-align: center;
+	height: 7%;
+	width: 100%;
+	font-family: "Merriweather", serif;
+	font-size: 25px;
+	background: #C6C6C6;	
+}
+h2{
+	padding: 1%; 
+}
+h4{
+	font-weight: bold;
+}
+h3{;
+	font-weight: bold;
+	margin: 5px;
+	font-family: "source sans pro", serif;
+	font-size: 25px;
+	margin: 5% 0 2% 5%;
+}
+h5{
+	margin: 1%;
+}
+p{
+	margin: 0 20% 5% 5%;
+	line-height: 150%;
+}
+section.image{
+	display: block;
+	float: right;
+	
+	height: 50%;
+}
+div#box1, #box2, #box3{
+	display: block;
+	width: 30%;
+	height: 30%;
+	float: left;
+}
+#box1, #box2, #box3{
+	 
+	width: 33.33%;
+
+}
+.border{
+	border-right: 1px solid gray;
+	margin-left: 5%;
+
+}
+.border2{
+	margin-left: 5%;
+}
+.boxes{
+	clear: both;
+	height: 30%;
+	width: 100%;
+}
+section.image{
+	background-image: url("../images/coworking.jpg");
+	width: 100%;
+	background-size: cover;
+}
+#wrapper{
+	float: right;
+	border: 1px solid gray;
+	width: 40%;
+	height: 85%;
+	background-color: white;
+	opacity: 0.8;
+	margin: 20px 20px 0 0;
+}
+
+footer{
+	clear: both;
+	background-color: black;
+	color: white;
+	height: 10%;
+}
+#menu {
+  display: none;
+  background-color: black;
+  padding:0;
+}
+button{
+  display: block;
+  width: 300px;
+  height: 40px;
+  line-height: 50px;
+  text-align: center;
+  font-family: "source sans pro", sans-serif;
+  border-radius: 3px;
+  background-color: #cccccc;
+  box-shadow: 0 1px 1px 0 gray;
+
+}
+button a{
+	font-weight: bold;
+	text-decoration: none;
+	color: black;
+	font-size: 20px;
+}
+button:hover{
+  box-shadow: none;
+  margin-top: 1px;
+  margin-bottom: 0.5px;
+}
+.createp{
+  background-color: yellow;
+  margin: 0 0 5% 5%;
+  border-radius: 3px;
+
+}
+.clearfix:after {
+  content: " ";
+  clear: both;
+  display: block;
+}
+@media only screen and (max-width: 1020px){
+	button{
+		width: 200px;
+	}
+	button a{
+		font-size: 15px;
+	}
+}
+@media only screen and (max-width: 725px){
+	nav a {
+    float: none;
+    width: auto;
+    font-size: 15px;
+    background-color: #666666;
+    display: none;
+  }
+  #menu {
+    display: block;
+    font-size: 25px;
+    padding: 0;
+    
+    
+}
+    nav.open a {
+    display: block;
+    border-bottom: solid 1px gray;
+  }
+  nav.open a:hover{
+  	color: yellow;
+  }
+}
+@media only screen and (max-width: 710px){
+	button{
+		width: 150px;
+	}
+	button a{
+		font-size: 13px;
+	}
+	h1, h2{
+		font-size: 20px;
+	}
+}
+@media only screen and (max-width: 620px){
+	p{
+	line-height: 100%;
+	}
+	div#box1, #box2, #box3{
+		float: none;
+
+		border: none;
+		display: inline-block;
+	}
+	footer{
+		clear: both;
+		bottom: 0;
+	}
+	button{
+		width: 40px;
+		margin: 0 0 0 15%;
+	}
+	button a{
+		visibility: hidden;
+	}
+	button a:before{
+		content: "\2713";
+		visibility: visible;
+
+	}
+
+}
+
