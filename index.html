@@ -64,13 +64,14 @@
       $("#menu").click(function(){
         $("#menu").hide();
         $("#anchors").animate({left: 0}, 400);
+        // $("anchors").show();
         $("#closemenu").show();
         $("#closemenu").addClass("top");
     });
 
       $("#closemenu").click(function() {
         $("#closemenu").removeClass("top");
-        $("#anchors").fadeOut();
+        $("#anchors").animate({'left':'+=100%'});
         $("#closemenu").hide();
         $("#menu").show();
         $("menu").addClass("top");
