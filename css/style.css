@@ -10,7 +10,7 @@ body {
  }
 
 h1 { 
- 	color: yellow;
+ 	color: lightblue;
 	font-family: "Merriweather";
 	font-size: 1.5em;
 	width: auto;
@@ -55,7 +55,7 @@ p {
 header {
 	background-color: black;
 	width: auto;
-	border-bottom: .25em solid yellow;
+	border-bottom: .25em solid lightblue;
 }
 
 nav {
@@ -123,13 +123,13 @@ nav a {
 	font-family: "Oswald";
 	color: black;
 	border-radius: 3px;
-	background-color: yellow;
+	background-color: lightblue;
 	box-shadow: 0 2px 0 0 gray;
 	margin-bottom: 3px;
 	margin: 0 auto;
 	width: 20em;
  }
- 
+
  @-webkit-keyframes wiggle {
 	0% {
 		-webkit-transform:rotate(4deg);
@@ -158,7 +158,7 @@ button {
 	color: black;
 	border-radius: 3px;
 	background-color: #cccccc;
-	box-shadow: 0 2px 0 0 yellow;
+	box-shadow: 0 2px 0 0 lightblue;
 	margin-bottom: 3px;
 	margin: 0 auto;
 	width: 17.5em;
