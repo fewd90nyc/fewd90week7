@@ -4,12 +4,12 @@
 
 }
 
-body { 
+body {
 	font-family: source sans pro;
 	font-size: 20px;
  }
 
-h1 { 
+h1 {
  	color: lightblue;
 	font-family: "Merriweather";
 	font-size: 1.5em;
@@ -27,15 +27,15 @@ blockquote {
 	background-color: #ecf0f1;
 }
 
-.taste { 
+.taste {
 	text-decoration: line-through;
  }
 
-.are { 
+.are {
 	text-decoration: underline;
   }
 
-h3 {         
+h3 {
 	font-size: 1.5em;
 	font-weight: bold;
 	padding-bottom: .75em;
@@ -83,11 +83,11 @@ nav a {
 .tagline {
 	font-family: "Merriweather", serif;
 	font-size: 1.25em;
-	background: #C6C6C6;	
+	background: #C6C6C6;
 }
 
-.hero { 
-  background-image: url("../images/coworking.jpg");	
+.hero {
+  background-image: url("../images/coworking.jpg");
   background-repeat: no-repeat;
   background-image: center;
   height: 25em;
@@ -97,7 +97,7 @@ nav a {
   padding-right: 3em;
 }
 
-.hero div { 
+.hero .panel {
 	width: 27.5em;
 	background-color: white;
 	float: right;
@@ -112,7 +112,7 @@ nav a {
  	line-height: 1.5em;
  }
 
- .hero button { 
+ .hero button {
     text-align: center;
     display: block;
 	height: 3em;
@@ -141,7 +141,7 @@ nav a {
 		-webkit-transform:rotate(4deg);
 	}
 }
- 
+
 .wiggle:hover {
 	-webkit-animation: wiggle 0.5s infinite;
 }
@@ -164,16 +164,22 @@ button {
 	width: 17.5em;
 }
 
-.action { 
+.section-action {
+    background-color: #ecf0f1;
+    padding: 45px;
+}
+
+.action {
 	float: left;
 	width: 33.3333%;
 	height: 350px;
-	background-color: #ecf0f1;
 	padding: 2.5em;
 	border-right: 1px solid gray;
 	margin: auto;
+}
 
-
+.action:last-child {
+    border-right: none;
 }
 
 .action p {
@@ -208,42 +214,44 @@ footer {
 }
 
 .container {
-	margin: 0 auto;
-	width: 960px;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 @media only screen and (max-width: 1150px) {
 	nav a {
 		font-size: .9em;
 	}
-.hero div { 
-	width: 24.5em;
-	padding: 3.5em;
-	background: rgba(236, 240, 241,0.9);
-	box-shadow: 2px 2px 2px gray;
- }
+    .hero .panel {
+    	width: 24.5em;
+    	padding: 3.5em;
+    	background: rgba(236, 240, 241,0.9);
+    	box-shadow: 2px 2px 2px gray;
+     }
 
-.hero p {
- 	font-size: .9em;
- 	line-height: 1.3em;
- }
+    .hero p {
+     	font-size: .9em;
+     	line-height: 1.3em;
+     }
 
-.hero button { 
-	width: 20em;
-	font-size: .7em;
-	height: 3em;
- }
+    .hero button {
+    	width: 20em;
+    	font-size: .7em;
+    	height: 3em;
+     }
 
-button {
-	width: 20em;
-	font-size: .7em;
-	height: 3em;
-}
+    button {
+    	width: 20em;
+    	font-size: .7em;
+    	height: 3em;
+    }
 
-.action {
-	padding: 2em;
-}
-.action p { 
+    .action {
+    	padding: 2em;
+    }
+
+    .action p {
 		font-size: .9em;
 		line-height: 1.3em;
 	 }
@@ -255,90 +263,90 @@ button {
 	}
 }
 @media only screen and (max-width: 920px) {
-#menu {
-    display: block;
-    font-size: 2em;
-    padding: 0;
-}
+    #menu {
+        display: block;
+        font-size: 2em;
+        padding: 0;
+    }
 
-h1 { 
-	float: none;
-	text-align: center;
-	 }
+    h1 {
+    	float: none;
+    	text-align: center;
+    	 }
 
-.hero div { 
-	width: 90%;
-	padding: 3.5em;
-	background: rgba(236, 240, 241,0.9);
-	box-shadow: 2px 2px 2px gray;
-	float: center;
- }
-h1 { 
-	float: none;
-}
+    .hero .panel {
+    	width: 90%;
+    	padding: 3.5em;
+    	background: rgba(236, 240, 241,0.9);
+    	box-shadow: 2px 2px 2px gray;
+    	float: center;
+     }
+    h1 {
+    	float: none;
+    }
 
-h4 {
-	padding-bottom: .75em;
-}
+    h4 {
+    	padding-bottom: .75em;
+    }
 
- nav {
- 	float: none;
-    width: auto;
-    font-size: 1em;
-    background-color: black;
-    display: block;
- }
+     nav {
+     	float: none;
+        width: auto;
+        font-size: 1em;
+        background-color: black;
+        display: block;
+     }
 
- nav a { 
-	float: none; 
-	display: none;
-	width: auto;
-	text-align: center;
-}
+     nav a {
+    	float: none;
+    	display: none;
+    	width: auto;
+    	text-align: center;
+    }
 
-nav:hover a {
-    display: block;
-  }
+    nav:hover a {
+        display: block;
+      }
 
-.hero p {
- 	font-size: .9em;
- 	line-height: 1.3em;
- }
+    .hero p {
+     	font-size: .9em;
+     	line-height: 1.3em;
+     }
 
-.hero button { 
-	width: 10em;
- }
+    .hero button {
+    	width: 10em;
+     }
 
-button {
-	width: 10em;
-}
+    button {
+    	width: 10em;
+    }
 
-.action {
-	float: none;
-	width: 100%;
-	border-bottom: 1px solid gray;
-	height: 280px;
-	padding: 50px;
-	text-align: center;
-}
-.action p { 
+    .action {
+    	float: none;
+    	width: 100%;
+    	border-bottom: 1px solid gray;
+    	height: 280px;
+    	padding: 50px;
+    	text-align: center;
+    }
+    .action p {
 		font-size: .9em;
 		line-height: 1.3em;
 		text-align: center;
 		padding-bottom: 1.2em;
 	 }
-blockquote { 
-	padding: 1.8em;
- }
+    blockquote {
+        padding: 1.8em;
+    }
 }
 @media only screen and (max-width: 550px) {
 
-h1 { 
+h1 {
 	float: none;
 	text-align: center;
 	 }
 
-blockquote { 
+blockquote {
 	padding: 1.8em;
 	font-size: 1em;
 	font-weight: bold;
@@ -346,11 +354,11 @@ blockquote {
 	padding-bottom: 1em;
  }
 
- .hero { 
-	 padding-right: 1.8em; 
+ .hero {
+	 padding-right: 1.8em;
 }
 
-.hero div {
+.hero .panel {
 	padding: 2.8em;
 }
 
@@ -359,23 +367,9 @@ blockquote {
  	line-height: 1.1em;
  }
 
-.hero button { 
+.hero button {
 	width: 10em;
  }
 
 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
