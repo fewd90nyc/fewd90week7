@@ -2,32 +2,81 @@
 <html>
   <head>
     <title>Startup Matchmaker</title>
-    <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oswald:700|Merriweather:700,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Oswald:700|Merriweather:700,700italic" rel="stylesheet" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/main.css">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
-  <body>
-    Startup Matchmaker
 
-    Developers Designers How it Works Our Team Blog
+<body>
+    <header>
+    <h1>Startup Matchmaker</h1>
 
-    Because two brains taste are better than one.
+    <nav>
+    <a href="#" id="menu">&#9776;</a>
+    <a href="#" id="closemenu">&#10005;</a>
+    <div id="anchors">
+        <a href="#">Developers</a> 
+        <a href="#">Designers</a>
+        <a href="#">How it Works</a>
+        <a href="#">Our Team</a>
+        <a href="#">Blog</a>
+        </div>
+    </nav>
+    </header>
 
-    Meet your Match!
-    Have a great idea for a product, but need help making it a reality? We"re here to help. Startup Matchmaker is the best place for designers and developers to find each other.
-    Create a Profile
-   
-    Create a Profile
-    Are you a Designer? Developer? Put yourself out there so that others can find you!
-    Sign Up Now
-    
-    Find a Developer
-    Looking for a fantastic developer to work with on the next big thing? Look no further.
-    Start Your Search
- 
-    Find a Designer
-    Need someone who can make a product intuitive and appealing? Get ready.
-    Start Your Search
-    
-    (C) 2013 Startup Matchmaker. Made in NY.
-  </body>
+    <blockquote class="tagline">Because two brains <span class="taste">taste</span> <span class="are">are</span> better than one.</blockquote>
+
+
+    <div class="hero">
+    <div class="herospot">
+    <h3>Meet your Match!</h3>
+    <p>Have a great idea for a product, but need help making it a reality? We're here to help. Startup Matchmaker is the best place for designers and developers to find each other. </p>
+    <button><a href="#">Create a Profile</a></button>
+    </div>
+    </div>
+
+    <section>
+    <div class="spot">
+    <h4>Create a Profile</h4>
+    <p>Are you a Designer? Developer? Put yourself out there so that others can find you!</p>
+    <button><a href="#">Sign Up Now</a></button>
+    </div>
+
+    <div class="spot">
+    <h4>Find a Developer</h4>
+    <p>Looking for a fantastic developer to work with on the next big thing? Look no further.</p>
+    <button><a href="#">Start Your Search</a></button>
+    </div>
+
+    <div class="spot">
+    <h4>Find a Designer</h4>
+    <p>Need someone who can make a product intuitive and appealing? Get ready.</p>
+    <button><a href="#">Start Your Search</a></button>
+    </div>
+    </section>
+        <footer>
+    <p>(C) 2013 Startup Matchmaker. Made in NY.</p>
+    </footer>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script>
+      $("#menu").click(function(){
+        $("#menu").hide();
+        $("#anchors").animate({left: 0}, 400);
+        // $("anchors").show();
+        $("#closemenu").show();
+        $("#closemenu").addClass("top");
+    });
+
+      $("#closemenu").click(function() {
+        $("#closemenu").removeClass("top");
+        $("#anchors").animate({'left':'+=100%'});
+        $("#closemenu").hide();
+        $("#menu").show();
+        $("menu").addClass("top");
+      });
+    </script>
+</body>
+
 </html>
