@@ -141,10 +141,6 @@ nav #navigators a:hover {
 	box-shadow: none;
 }
 
-.box .button {
-	background: #C6C6C6;
-}
-
 footer {
 	background-color: black;
 	color: white;
@@ -153,9 +149,31 @@ footer {
 }
 
 @media only screen and (max-width: 950px) {
-	nav #navigators a {
+	/*nav #navigators a {
 		font-size: 1em;
 		padding: 0 .25em;
+	}*/
+	nav {
+		width: 100%;
+		float: none;
+	}
+	#menu {
+		display: block;
+		color: white;
+		font-size: 30px;
+		text-align: right;
+		width: 100%;
+		position: absolute;
+	}
+	nav #navigators {
+		position: absolute;
+		width: 90%;
+		border-right: none;
+		float: none;
+		display: none;
+	}
+	#menu:hover nav#navigators {
+		display: block;
 	}
 }
 
@@ -189,9 +207,6 @@ footer {
 		width: 100%;
 		position: absolute;
 	}
-	#menu:hover #navigators a {
-		display: block;
-	}
 	nav #navigators {
 		position: absolute;
 		width: 90%;
@@ -199,7 +214,9 @@ footer {
 		float: none;
 		display: none;
 	}
-	
+	#menu:hover nav#navigators {
+		display: block;
+	}
 }
 
 @media only screen and (min-width: 480px) {
